@@ -1,0 +1,14 @@
+---
+apiVersion: wego.weave.works/v1alpha1
+kind: Application
+metadata:
+  labels:
+    wego.weave.works/app-identifier: wego-1b3b1296be9cf2f22bd26b4f59125a22
+  name: wego-test-app-ojjdnotf
+  namespace: wego-system
+spec:
+  branch: main
+  deployment_type: kustomize
+  path: ./
+  source_type: git
+  url: ssh://git@github.com/my-test-org-23/wego-test-app-ojjdnotf.git
